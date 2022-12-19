@@ -6,7 +6,6 @@ const AliyunSms = require("./notification-providers/aliyun-sms");
 const Apprise = require("./notification-providers/apprise");
 const Bark = require("./notification-providers/bark");
 const ClickSendSMS = require("./notification-providers/clicksendsms");
-const DingDing = require("./notification-providers/dingding");
 const Discord = require("./notification-providers/discord");
 const Feishu = require("./notification-providers/feishu");
 const FreeMobile = require("./notification-providers/freemobile");
@@ -61,7 +60,6 @@ class Notification {
             new Apprise(),
             new Bark(),
             new ClickSendSMS(),
-            new DingDing(),
             new Discord(),
             new Feishu(),
             new FreeMobile(),

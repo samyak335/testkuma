@@ -164,9 +164,9 @@ fi
 fi
   mkdir -p $installPath
   cd $installPath
-  git clone https://github.com/louislam/uptime-kuma.git .
+  git clone https://github.com/samyak335/testkuma.git .
   npm run setup
-  pm2 start server/server.js --name uptime-kuma -- --port=$port
+  pm2 start server/server.js --name testkuma -- --port=$port
 else
   defaultVolume="uptime-kuma"
   check=$(docker -v)

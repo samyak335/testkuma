@@ -3,3 +3,26 @@
     at module.exports.stop (/root/uptime-kuma/server/socket-handlers/cloudflared-socket-handler.js:112:21)
     at shutdownFunction (/root/uptime-kuma/server/server.js:1709:11)
     at async Server.<anonymous> (/root/uptime-kuma/server/server.js:1475:9)
+[2022-12-19 11:49:56] TypeError: Cannot read properties of undefined (reading 'kill')
+    at CloudflaredTunnel.stop (/root/testkuma/node_modules/node-cloudflared-tunnel/cloudflared-tunnel.js:115:27)
+    at module.exports.stop (/root/testkuma/server/socket-handlers/cloudflared-socket-handler.js:112:21)
+    at shutdownFunction (/root/testkuma/server/server.js:1709:11)
+    at async Server.<anonymous> (/root/testkuma/server/server.js:1475:9)
+[2022-12-19 11:49:59] Error [ERR_SERVER_NOT_RUNNING]: Server is not running.
+    at new NodeError (node:internal/errors:387:5)
+    at Server.close (node:net:1804:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:525:35)
+    at emitCloseNT (node:net:1857:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'ERR_SERVER_NOT_RUNNING'
+}
+[2022-12-19 12:01:40] Error [ERR_SERVER_NOT_RUNNING]: Server is not running.
+    at new NodeError (node:internal/errors:387:5)
+    at Server.close (node:net:1804:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:525:35)
+    at emitCloseNT (node:net:1857:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'ERR_SERVER_NOT_RUNNING'
+}
