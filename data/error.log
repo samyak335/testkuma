@@ -1,0 +1,5 @@
+[2022-12-19 09:30:49] TypeError: Cannot read properties of undefined (reading 'kill')
+    at CloudflaredTunnel.stop (/root/uptime-kuma/node_modules/node-cloudflared-tunnel/cloudflared-tunnel.js:115:27)
+    at module.exports.stop (/root/uptime-kuma/server/socket-handlers/cloudflared-socket-handler.js:112:21)
+    at shutdownFunction (/root/uptime-kuma/server/server.js:1709:11)
+    at async Server.<anonymous> (/root/uptime-kuma/server/server.js:1475:9)
